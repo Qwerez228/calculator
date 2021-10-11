@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+      background-color: #fff;
+      user-select: none;
+	 justify-content: center;
+   }
+   .container {
+	   width: 100%;
+	max-width: 500px;
+	height: 100%;
+	margin: auto;
+    justify-content: center;
+	   align-self: center;
+	   border-collapse: separate;
+    display: flex;
+   }
+ 
+.calck{
+	width: 500px;
+	height: 700px;
+	 display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 4px;
+      background-color: #212121;
+      padding: 4px;
+      border-radius: 5px;
+      font-family: "Tahoma";
+	    align-self: center;
+
+}
+
+   .item {
+      background-color: gray;
+      color: #000;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      cursor: pointer;
+      font-weight: bold;
+   }
+   form {
+      max-width: 100%;
+   }
+   input {
+      width: 100%;
+      height: 60px;
+      border: none;
+      font-size: 30px;
+      outline: none;
+      text-align: right;
+	   border-radius: 5px;
+	   
+   }
+   .input {
+      grid-column: 1/-1;
+      padding: 0;
+   }
+   .clean {
+      grid-column: 1/3;
+      background-color: #0288d1;
+   }
+   .back {
+      grid-column: 3/-1;
+   }
+   .equal {
+      grid-column: 4;
+      grid-row: 6/8;
+      background-color: #bdbdbd;
+   }
+   .zero {
+      grid-column: 1/3;
+   }
+
+@media  (max-width:767px){
+    .calck{
+        width: 320px;
+		font-size: 20px;
+    }
+	input {
+		 font-size: 20px;
+	}
+}
+
+@media  (max-height:700px){
+	.calck{
+        height: 600px;
+		font-size: 20px;
+    }
+	input {
+		 font-size: 20px;
+	}
+}
+
+@media  (max-height:568px){
+	.calck{
+        height: 520px;
+		
+    }
+	
+	 input {
+		 font-size: 20px;
+	}
+}
